@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Demo</title>
+  <style>
+    body{font-family:Arial, sans-serif; margin:0; padding:24px; background:#f6f7fb;}
+    .box{max-width:900px; margin:auto; background:#fff; border:1px solid #e6e8ef; border-radius:14px; padding:18px;}
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; background:#eef3ff; color:#1a6dff; font-weight:700; font-size:12px;}
+    code{background:#f0f2f8; padding:2px 6px; border-radius:8px;}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span class="tag">Demo Website</span>
+    <h2>Interception Detection (Heuristic Layer)</h2>
+    <p>
+      This page loads the detection probe from <code>/ds/probe.js</code>.
+      If your session is flagged, a banner will appear at the top of the page.
+    </p>
+    <p>Control panel: <a href="/control">/control</a></p>
+    <p style="color:#666;font-size:13px;">
+      Note: This is a lightweight awareness layer. It does not auto-ban users.
+    </p>
+  </div>
+
+  <script src="/ds/probe.js"></script>
+</body>
+</html>
